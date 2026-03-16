@@ -3,24 +3,592 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Base - TailWind CSS Startup Template</title>
+    <title>Azzle - AI Technology & Startup HTML Template</title>
+    <!-- Font chữ -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Icon -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- CSS -->
     <link rel="stylesheet" href="./css/output.css" />
   </head>
   <body>
     <!-- Header -->
-    <header></header>
+    <header class="bg-[#efeae3]">
+      <nav class="container mx-auto flex justify-between items-center p-3">
+        <div class="logo">
+          <img src="./img/logo-dark.png" alt="logo" />
+        </div>
+        <div class="nav-bar font-inter">
+          <ul class="flex items-center justify-between gap-13">
+            <li
+              class="font-semibold py-4 flex gap-0.5 items-center justify-center relative group"
+            >
+              <a href="#">Demo</a>
+              <img
+                class="w-4 h-4 rotate-90 group-hover:rotate-0 transition-all duration-500"
+                src="./img/icon-black-cheveron-right.svg"
+                alt="icon"
+              />
+              <!-- Dropdown -->
+              <div
+                class="drop-down absolute top-full left-0 opacity-0 invisible translate-y-3 group-hover:opacity-100 group-hover:visible group-hover:translate-y-0 transition-all duration-500"
+              >
+                <div
+                  class="absolute -top-2 left-6 w-0 h-0 border-l-8 border-l-transparent border-r-8 border-r-transparent border-b-8 border-b-white"
+                ></div>
+                <ul class="bg-white text-black min-w-50 rounded-lg text-[15px]">
+                  <li
+                    class="hover:text-red-500 px-4 p-2 transition-all duration-500"
+                  >
+                    Home 01
+                  </li>
+                  <li
+                    class="hover:text-red-500 px-4 p-2 transition-all duration-500"
+                  >
+                    Home 02
+                  </li>
+                  <li
+                    class="hover:text-red-500 px-4 p-2 transition-all duration-500"
+                  >
+                    Home 03
+                  </li>
+                  <li
+                    class="hover:text-red-500 px-4 p-2 transition-all duration-500"
+                  >
+                    Home 04
+                  </li>
+                </ul>
+              </div>
+            </li>
+
+            <li
+              class="font-semibold py-4 flex gap-0.5 items-center justify-center"
+            >
+              <a href="#">About</a>
+            </li>
+            <li
+              class="font-semibold py-4 flex gap-0.5 items-center justify-center relative group"
+            >
+              <a href="#">Services</a>
+              <img
+                class="w-4 h-4 rotate-90 group-hover:rotate-0 transition-all duration-500"
+                src="./img/icon-black-cheveron-right.svg"
+                alt="icon"
+              />
+              <!-- Dropdown -->
+              <div
+                class="drop-down absolute top-full left-0 opacity-0 invisible translate-y-3 group-hover:opacity-100 group-hover:visible group-hover:translate-y-0 transition-all duration-500"
+              >
+                <div
+                  class="absolute -top-2 left-6 w-0 h-0 border-l-8 border-l-transparent border-r-8 border-r-transparent border-b-8 border-b-white"
+                ></div>
+                <ul class="bg-white text-black min-w-50 rounded-lg text-[15px]">
+                  <li
+                    class="hover:text-red-500 px-4 p-2 transition-all duration-500"
+                  >
+                    Services
+                  </li>
+                  <li
+                    class="hover:text-red-500 px-4 p-2 transition-all duration-500"
+                  >
+                    Services Details
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li
+              class="font-semibold py-4 flex gap-0.5 items-center justify-center relative group"
+            >
+              <a href="#">Pages</a>
+              <img
+                class="w-4 h-4 rotate-90 group-hover:rotate-0 transition-all duration-500"
+                src="./img/icon-black-cheveron-right.svg"
+                alt="icon"
+              />
+              <!-- Dropdown -->
+              <div
+                class="drop-down absolute top-full left-0 opacity-0 invisible translate-y-3 group-hover:opacity-100 group-hover:visible group-hover:translate-y-0 transition-all duration-500"
+              >
+                <div
+                  class="absolute -top-2 left-6 w-0 h-0 border-l-8 border-l-transparent border-r-8 border-r-transparent border-b-8 border-b-white"
+                ></div>
+                <ul class="bg-white text-black min-w-50 rounded-lg text-[15px]">
+                  <li
+                    class="px-4 p-2 flex justify-between items-center gap-8 relative group/sub"
+                  >
+                    <a
+                      class="hover:text-red-500 transition-all duration-500"
+                      href="#"
+                      >Blogs</a
+                    >
+                    <img
+                      class="w-4 h-4"
+                      src="./img/icon-black-cheveron-right.svg"
+                      alt="icon"
+                    />
+                    <!-- Sub Dropdown -->
+                    <ul
+                      class="absolute top-0 left-full bg-white rounded-xl p-5 w-50 space-y-2 opacity-0 invisible translate-y-3 group-hover/sub:opacity-100 group-hover/sub:visible group-hover/sub:translate-y-0 transition-all duration-500"
+                    >
+                      <li>Blogs</li>
+                      <li>Blog Details</li>
+                    </ul>
+                  </li>
+                  <li
+                    class="px-4 p-2 flex justify-between items-center gap-8 relative group/sub"
+                  >
+                    <a
+                      class="hover:text-red-500 transition-all duration-500"
+                      href="#"
+                      >Team</a
+                    >
+                    <img
+                      class="w-4 h-4"
+                      src="./img/icon-black-cheveron-right.svg"
+                      alt="icon"
+                    />
+                    <!-- Sub Dropdown -->
+                    <ul
+                      class="absolute top-0 left-full bg-white rounded-xl p-5 w-50 space-y-2 opacity-0 invisible translate-y-3 group-hover/sub:opacity-100 group-hover/sub:visible group-hover/sub:translate-y-0 transition-all duration-500"
+                    >
+                      <li>Teams</li>
+                      <li>Teams Details</li>
+                    </ul>
+                  </li>
+                  <li
+                    class="px-4 p-2 flex justify-between items-center gap-8 relative group/sub"
+                  >
+                    <a
+                      class="hover:text-red-500 transition-all duration-500"
+                      href="#"
+                      >FAQ</a
+                    >
+                    <img
+                      class="w-4 h-4"
+                      src="./img/icon-black-cheveron-right.svg"
+                      alt="icon"
+                    />
+                    <!-- Sub Dropdown -->
+                    <ul
+                      class="absolute top-0 left-full bg-white rounded-xl p-5 w-50 space-y-2 opacity-0 invisible translate-y-3 group-hover/sub:opacity-100 group-hover/sub:visible group-hover/sub:translate-y-0 transition-all duration-500"
+                    >
+                      <li>FAQ-1</li>
+                      <li>FAQ-2</li>
+                    </ul>
+                  </li>
+                  <li
+                    class="px-4 p-2 flex justify-between items-center gap-8 relative group/sub"
+                  >
+                    <a
+                      class="hover:text-red-500 transition-all duration-500"
+                      href="#"
+                      >Portfolio</a
+                    >
+                    <img
+                      class="w-4 h-4"
+                      src="./img/icon-black-cheveron-right.svg"
+                      alt="icon"
+                    />
+                    <!-- Sub Dropdown -->
+                    <ul
+                      class="absolute top-0 left-full bg-white rounded-xl p-5 w-50 space-y-2 opacity-0 invisible translate-y-3 group-hover/sub:opacity-100 group-hover/sub:visible group-hover/sub:translate-y-0 transition-all duration-500"
+                    >
+                      <li>Portfolio</li>
+                      <li>Portfolio Details</li>
+                    </ul>
+                  </li>
+                  <li class="px-4 p-2 flex justify-between items-center gap-8">
+                    <a
+                      class="hover:text-red-500 transition-all duration-500"
+                      href="#"
+                      >Pricing</a
+                    >
+                  </li>
+                  <li
+                    class="px-4 p-2 flex justify-between items-center gap-8 relative group/sub"
+                  >
+                    <a
+                      class="hover:text-red-500 transition-all duration-500"
+                      href="#"
+                      >Utilities</a
+                    >
+                    <img
+                      class="w-4 h-4"
+                      src="./img/icon-black-cheveron-right.svg"
+                      alt="icon"
+                    />
+                    <!-- Sub Dropdown -->
+                    <ul
+                      class="absolute top-0 left-full bg-white rounded-xl p-5 w-50 space-y-2 opacity-0 invisible translate-y-3 group-hover/sub:opacity-100 group-hover/sub:visible group-hover/sub:translate-y-0 transition-all duration-500"
+                    >
+                      <li>Error 404</li>
+                      <li>Login</li>
+                      <li>Signup</li>
+                      <li>Reset Password</li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li
+              class="font-semibold py-4 flex gap-0.5 items-center justify-center"
+            >
+              <a href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+        <div class="nav-btn flex items-center gap-6">
+          <a
+            class="w-30 py-3 bg-transparent text-black border border-black rounded-[50px] font-inter text-center font-bold cursor-pointer relative overflow-hidden before:absolute before:inset-0 before:bg-[#fe330a] before:origin-top before:z-0 before:scale-y-0 before:transition-transform before:duration-300 hover:text-white hover:border-[#fe330a] hover:before:scale-y-100"
+          >
+            <span class="relative z-10">Login</span>
+          </a>
+          <a
+            class="w-40 py-3 bg-black text-white border border-black rounded-[50px] font-inter text-center font-bold cursor-pointer relative overflow-hidden before:absolute before:inset-0 before:bg-[#fe330a] before:origin-top before:z-0 before:scale-y-0 before:transition-transform before:duration-300 hover:border-[#fe330a] hover:before:scale-y-100"
+          >
+            <span class="relative z-10">Sign up free</span>
+          </a>
+        </div>
+      </nav>
+    </header>
+
     <main>
       <!-- Carousel -->
+      <section class="bg-[#efeae3] w-full h-auto">
+        <div class="carousel-content container mx-auto text-center pt-30">
+          <h1 class="text-black font-dm font-bold text-[120px] leading-30 mb-6">
+            Simplify your SaaS <br />
+            solution with AI
+          </h1>
+          <p
+            class="text-[#191919] font-inter font-semibold text-[20px] leading[28px]"
+          >
+            Our AI SAAS tool is a cloud-based software delivery model. It helps
+            businesses forecast demand for <br />
+            products and services and optimize inventory management and supply
+            chain operations.
+          </p>
+        </div>
+        <div
+          class="carousel-btn flex items-center gap-10 justify-center text-center pt-10"
+        >
+          <a
+            class="w-50 py-3 bg-black text-white border border-black rounded-[50px] font-inter text-center font-bold cursor-pointer relative overflow-hidden before:absolute before:inset-0 before:bg-[#fe330a] before:origin-top before:z-0 before:scale-y-0 before:transition-transform before:duration-300 hover:text-white hover:border-[#fe330a] hover:before:scale-y-100"
+          >
+            <span class="relative z-10">Get started for free</span>
+          </a>
+          <a
+            class="w-30 py-3 bg-transparent text-black border border-black rounded-[50px] font-inter text-center font-bold cursor-pointer relative overflow-hidden before:absolute before:inset-0 before:bg-[#fe330a] before:origin-top before:z-0 before:scale-y-0 before:transition-transform before:duration-300 hover:text-white hover:border-[#fe330a] hover:before:scale-y-100"
+          >
+            <span class="relative z-10">Learn more</span>
+          </a>
+        </div>
+        <div class="carousel-dashboard container mx-auto my-20">
+          <img src="./img/hero-dashboard.jpg" alt="dashboard" />
+        </div>
+        <div class="carousel-slider mt-10">
+          <div
+            class="carousel-slider-content container mx-auto border-t border-t-gray-300"
+          >
+            <p
+              class="text-[#191919] text-[18px] leading-7 font-inter font-normal text-center py-18"
+            >
+              Companies of all sizes trust us to find AI SaaS critical to their
+              growth and innovation
+            </p>
+          </div>
+          <div
+            class="slider container mx-auto flex justify-between items-center pb-30"
+          >
+            <div class="slide">
+              <img src="./img/brand-4.png" alt="network" />
+            </div>
+            <div class="slide">
+              <img src="./img/brand-5.png" alt="umbrella" />
+            </div>
+            <div class="slide">
+              <img src="./img/brand-1.png" alt="sitemark" />
+            </div>
+            <div class="slide">
+              <img src="./img/brand-2.png" alt="greenish" />
+            </div>
+            <div class="slide">
+              <img src="./img/brand-3.png" alt="luminous" />
+            </div>
+          </div>
+        </div>
+      </section>
       <!-- Features -->
+      <section class="bg-white container mx-auto pt-30">
+        <h1 class="font-dm text-[80px] leading-20 font-bold text-black mb-20">
+          Core features that <br />
+          make it valuable
+        </h1>
+        <div class="flex">
+          <div
+            class="group features-item w-80 h-95 border border-black bg-transparent hover:bg-black transition-all duration-300"
+          >
+            <div class="p-5 flex flex-col gap-10">
+              <div class="w-17.5 h-17.5 relative">
+                <img
+                  class="w-17.5 h-17.5"
+                  src="./img/service-icon-black-1.svg"
+                  alt=""
+                />
+                <img
+                  class="absolute top-0 left-0 w-full h-full opacity-0 group-hover:opacity-100 transition-all duration-300"
+                  src="./img/service-icon-orange-1.svg"
+                  alt=""
+                />
+              </div>
+              <div class="group-hover:text-white">
+                <h3 class="text-[28px] leading-8 font-bold font-dm">
+                  Resource Flexibility
+                </h3>
+                <p class="text-[18px] leading-7.5 font-normal font-inter mt-4">
+                  This is an excellent option for <br />
+                  people & small businesses <br />
+                  who are starting out.
+                </p>
+              </div>
+              <i
+                class="fa-solid fa-arrow-right text-[30px] group-hover:text-red-500"
+              ></i>
+            </div>
+          </div>
+          <div
+            class="group features-item w-80 h-95 border border-black bg-transparent hover:bg-black transition-all duration-300"
+          >
+            <div class="p-5 flex flex-col gap-10">
+              <div class="w-17.5 h-17.5 relative">
+                <img
+                  class="w-17.5 h-17.5"
+                  src="./img/service-icon-black-2.svg"
+                  alt=""
+                />
+                <img
+                  class="absolute top-0 left-0 w-full h-full opacity-0 group-hover:opacity-100 transition-all duration-300"
+                  src="./img/service-icon-orange-2.svg"
+                  alt=""
+                />
+              </div>
+              <div class="group-hover:text-white">
+                <h3 class="text-[28px] leading-8 font-bold font-dm">
+                  Resource Flexibility
+                </h3>
+                <p class="text-[18px] leading-7.5 font-normal font-inter mt-4">
+                  This is an excellent option for <br />
+                  people & small businesses <br />
+                  who are starting out.
+                </p>
+              </div>
+              <i
+                class="fa-solid fa-arrow-right text-[30px] group-hover:text-red-500"
+              ></i>
+            </div>
+          </div>
+          <div
+            class="group features-item w-80 h-95 border border-black bg-transparent hover:bg-black transition-all duration-300"
+          >
+            <div class="p-5 flex flex-col gap-10">
+              <div class="w-17.5 h-17.5 relative">
+                <img
+                  class="w-17.5 h-17.5"
+                  src="./img/service-icon-black-3.svg"
+                  alt=""
+                />
+                <img
+                  class="absolute top-0 left-0 w-full h-full opacity-0 group-hover:opacity-100 transition-all duration-300"
+                  src="./img/service-icon-orange-3.svg"
+                  alt=""
+                />
+              </div>
+              <div class="group-hover:text-white">
+                <h3 class="text-[28px] leading-8 font-bold font-dm">
+                  Resource Flexibility
+                </h3>
+                <p class="text-[18px] leading-7.5 font-normal font-inter mt-4">
+                  This is an excellent option for <br />
+                  people & small businesses <br />
+                  who are starting out.
+                </p>
+              </div>
+              <i
+                class="fa-solid fa-arrow-right text-[30px] group-hover:text-red-500"
+              ></i>
+            </div>
+          </div>
+          <div
+            class="group features-item w-80 h-95 border border-black bg-transparent hover:bg-black transition-all duration-300"
+          >
+            <div class="p-5 flex flex-col gap-10">
+              <div class="w-17.5 h-17.5 relative">
+                <img
+                  class="w-17.5 h-17.5"
+                  src="./img/service-icon-black-4.svg"
+                  alt=""
+                />
+                <img
+                  class="absolute top-0 left-0 w-full h-full opacity-0 group-hover:opacity-100 transition-all duration-300"
+                  src="./img/service-icon-orange-4.svg"
+                  alt=""
+                />
+              </div>
+              <div class="group-hover:text-white">
+                <h3 class="text-[28px] leading-8 font-bold font-dm">
+                  Resource Flexibility
+                </h3>
+                <p class="text-[18px] leading-7.5 font-normal font-inter mt-4">
+                  This is an excellent option for <br />
+                  people & small businesses <br />
+                  who are starting out.
+                </p>
+              </div>
+              <i
+                class="fa-solid fa-arrow-right text-[30px] group-hover:text-red-500"
+              ></i>
+            </div>
+          </div>
+        </div>
+      </section>
       <!-- Accessible -->
+      <section
+        class="bg-white pt-35 container mx-auto flex justify-between items-center gap-32"
+      >
+        <div class="flex-1 w-131.5 h-125">
+          <img
+            class="w-full h-full"
+            src="./img/content-image-1.jpg"
+            alt="accessible"
+          />
+        </div>
+        <div class="flex-1">
+          <h1 class="font-dm text-[80px] leading-20 font-bold text-black mb-5">
+            Accessible to a wider audience
+          </h1>
+          <p class="font-inter font-normal text-[21px] leading-7.25 mb-8">
+            Advanced AI capabilities accessible to a broader audience, including
+            small & medium-sized businesses and individuals who may not have the
+            resources or expertise to develop.
+          </p>
+          <p class="font-inter font-normal text-[21px] leading-7.25">
+            Advanced AI capabilities accessible to a broader audience, including
+            small & medium-sized businesses and individuals who may not have the
+            resources or expertise to develop.
+          </p>
+        </div>
+      </section>
       <!-- Solutions -->
+      <section
+        class="bg-white container mx-auto pt-30 flex justify-between gap-32"
+      >
+        <div class="flex-6/11">
+          <h1 class="font-dm text-[80px] leading-20 font-bold text-black mb-6">
+            Providing quick deploy solutions
+          </h1>
+          <p class="font-inter font-normal text-[21px] leading-7.25 mb-12">
+            Our AI SaaS solutions can be quickly deployed, enabling users to
+            start benefiting from AI capabilities without lengthy setup and
+            development times in fast-paced industries.
+          </p>
+          <ul class="flex flex-col gap-4">
+            <li
+              class="flex items-center gap-3 font-dm font-bold text-black text-[28px] leading-8.75"
+            >
+              <div><img src="./img/check-circle.svg" alt="icon-check" /></div>
+              Ready-to-use AI capabilities system
+            </li>
+            <li
+              class="flex items-center gap-3 font-dm font-bold text-black text-[28px] leading-8.75"
+            >
+              <div><img src="./img/check-circle.svg" alt="icon-check" /></div>
+              Users can quickly integrate AI features
+            </li>
+            <li
+              class="flex items-center gap-3 font-dm font-bold text-black text-[28px] leading-8.75"
+            >
+              <div><img src="./img/check-circle.svg" alt="icon-check" /></div>
+              Time savings translate to cost savings
+            </li>
+          </ul>
+        </div>
+        <div class="flex-5/11">
+          <img
+            class="w-full h-auto"
+            src="./img/content-image-2.jpg"
+            alt="Solutions"
+          />
+        </div>
+      </section>
       <!-- Counter -->
+      <section
+        class="pt-30 max-w-[95%] mx-auto border border-amber-300 flex justify-between items-center"
+      >
+        <div class="flex-2/5">
+          <img
+            class="w-full h-full object-cover object-center"
+            src="./img/funfact-image.jpg"
+            alt="funfact-image"
+          />
+        </div>
+        <div class="py-32 pl-16 pr-28 flex-3/5 bg-black">
+          <div>
+            <h1
+              class="font-dm text-[80px] leading-20 font-bold text-white mb-6"
+            >
+              AI-powered that streamline tasks
+            </h1>
+            <p
+              class="font-inter font-normal text-white leading-7.25] text-[21px]"
+            >
+              As your business grows or your AI SaaS needs change, you can
+              easily adjust your subscription level to match those needs. This
+              flexibility ensures that AI remains an asset.
+            </p>
+            <div class="my-14 h-px w-full bg-gray-800"></div>
+            <ul class="flex justify-between">
+              <li>
+                <h3
+                  class="text-[#fe330a] text-[120px] leading-30 font-bold font-dm"
+                >
+                  92%
+                </h3>
+                <span
+                  class="text-white text-[21px] leading-7 font-normal font-inter"
+                  >Customer service inquiries</span
+                >
+              </li>
+              <li>
+                <h3
+                  class="text-[#fe330a] text-[120px] leading-30 font-bold font-dm"
+                >
+                  75%
+                </h3>
+                <span
+                  class="text-white text-[21px] leading-7 font-normal font-inter"
+                  >Using financial institutions</span
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
       <!-- Prices -->
       <!-- Information -->
       <!-- Feedback -->
     </main>
     <!-- Footer -->
     <footer></footer>
-    <!-- Back to Top -->
   </body>
 </html>
