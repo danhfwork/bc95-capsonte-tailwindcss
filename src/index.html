@@ -532,63 +532,602 @@
         </div>
       </section>
       <!-- Counter -->
-      <section
-        class="pt-30 max-w-[95%] mx-auto border border-amber-300 flex justify-between items-center"
-      >
-        <div class="flex-2/5">
-          <img
-            class="w-full h-full object-cover object-center"
-            src="./img/funfact-image.jpg"
-            alt="funfact-image"
-          />
-        </div>
-        <div class="py-32 pl-16 pr-28 flex-3/5 bg-black">
-          <div>
-            <h1
-              class="font-dm text-[80px] leading-20 font-bold text-white mb-6"
-            >
-              AI-powered that streamline tasks
-            </h1>
-            <p
-              class="font-inter font-normal text-white leading-7.25] text-[21px]"
-            >
-              As your business grows or your AI SaaS needs change, you can
-              easily adjust your subscription level to match those needs. This
-              flexibility ensures that AI remains an asset.
-            </p>
-            <div class="my-14 h-px w-full bg-gray-800"></div>
-            <ul class="flex justify-between">
-              <li>
-                <h3
-                  class="text-[#fe330a] text-[120px] leading-30 font-bold font-dm"
-                >
-                  92%
-                </h3>
-                <span
-                  class="text-white text-[21px] leading-7 font-normal font-inter"
-                  >Customer service inquiries</span
-                >
-              </li>
-              <li>
-                <h3
-                  class="text-[#fe330a] text-[120px] leading-30 font-bold font-dm"
-                >
-                  75%
-                </h3>
-                <span
-                  class="text-white text-[21px] leading-7 font-normal font-inter"
-                  >Using financial institutions</span
-                >
-              </li>
-            </ul>
+      <section class="pt-30 max-w-[95%] mx-auto">
+        <div
+          class="grid grid-cols-[45%_55%] bg-black overflow-hidden rounded-[50px]"
+        >
+          <div class="relative">
+            <img
+              class="w-full h-full object-cover object-center rounded-[50px]"
+              src="./img/funfact-image.jpg"
+              alt="funfact-image"
+            />
+            <div class="absolute inset-0 flex items-center justify-center">
+              <button
+                class="w-30 h-30 rounded-full border-2 border-black flex items-center justify-center bg-transparent text-[18px] font-inter font-bold leading-4.5 cursor-pointer hover:text-white hover:bg-[#fe330a] transition-all duration-500"
+              >
+                Play
+              </button>
+            </div>
+          </div>
+          <div class="py-32 pl-16 pr-28 bg-black">
+            <div>
+              <h1
+                class="font-dm text-[80px] leading-20 font-bold text-white mb-6"
+              >
+                AI-powered that streamline tasks
+              </h1>
+              <p
+                class="font-inter font-normal text-white leading-7.25] text-[21px]"
+              >
+                As your business grows or your AI SaaS needs change, you can
+                easily adjust your subscription level to match those needs. This
+                flexibility ensures that AI remains an asset.
+              </p>
+              <div class="my-14 h-px w-full bg-gray-800"></div>
+              <ul class="flex justify-between">
+                <li>
+                  <h3
+                    class="text-[#fe330a] text-[120px] leading-30 font-bold font-dm"
+                  >
+                    92%
+                  </h3>
+                  <span
+                    class="text-white text-[21px] leading-7 font-normal font-inter"
+                    >Customer service inquiries</span
+                  >
+                </li>
+                <li>
+                  <h3
+                    class="text-[#fe330a] text-[120px] leading-30 font-bold font-dm"
+                  >
+                    75%
+                  </h3>
+                  <span
+                    class="text-white text-[21px] leading-7 font-normal font-inter"
+                    >Using financial institutions</span
+                  >
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </section>
       <!-- Prices -->
+      <section
+        class="text-center flex flex-col justify-center items-center pt-30"
+      >
+        <h1 class="font-dm text-[80px] leading-20 font-bold text-black mb-10">
+          Cost-effectively <br />
+          build any software
+        </h1>
+        <div
+          class="flex justify-center gap-4 items-center w-90 rounded-full border-2 border-black font-semibold mb-16"
+        >
+          <button
+            id="btn-monthly"
+            class="flex-1 py-5 px-4 inline-block rounded-full font-inter cursor-pointer bg-transparent text-black active1"
+          >
+            Monthly
+          </button>
+          <button
+            id="btn-annually"
+            class="flex-1 py-5 px-4 inline-block rounded-full font-inter cursor-pointer bg-transparent text-black"
+          >
+            Annually
+          </button>
+        </div>
+        <!-- Item Counter -->
+        <div class="grid grid-cols-3 gap-6 container mx-auto">
+          <div class="bg-[#efeae3] h-auto rounded-[10px] group">
+            <div
+              class="p-10 text-left rounded-[10px] text-black group-hover:text-white group-hover:bg-black transition-all duration-500"
+            >
+              <h3 class="font-inter text-[18px] leading-7 font-normal">
+                <span class="text-[28px] leading-9 font-dm font-bold"
+                  >Beginner</span
+                ><br />Up to 10 members
+              </h3>
+              <div class="w-full h-px bg-[#dbd6cf] my-5"></div>
+              <h4>
+                <span
+                  id="price-beginner"
+                  class="font-dm text-[80px] leading-20 font-bold"
+                  >$25</span
+                >
+                <span
+                  id="cycle-beginner"
+                  class="font-semibold font-dm text-[18px] leading-7"
+                  >/Per month</span
+                >
+              </h4>
+              <p class="font-inter text-[18px] leading-7 font-normal mb-10">
+                This is an excellent option for people & small businesses who
+                are starting out.
+              </p>
+              <button
+                class="w-full h-10 p-8 border-2 border-black text-center rounded-[50px] cursor-pointer flex justify-center items-center group-hover:border-red-500 transition-all duration-500 relative overflow-hidden before:absolute before:inset-0 before:bg-[#fe330a] before:origin-top before:z-0 before:scale-y-0 before:transition-transform before:duration-300 hover:text-white hover:border-[#fe330a] hover:before:scale-y-100"
+              >
+                <span
+                  class="font-bold text-[16px] leading-6 font-inter relative z-10"
+                  >Choose the plan</span
+                >
+              </button>
+            </div>
+          </div>
+          <div class="bg-[#efeae3] h-auto rounded-[10px] group">
+            <div
+              class="p-10 text-left rounded-[10px] text-black group-hover:text-white group-hover:bg-black transition-all duration-500"
+            >
+              <h3 class="font-inter text-[18px] leading-7 font-normal">
+                <span class="text-[28px] leading-9 font-dm font-bold"
+                  >Starter</span
+                ><br />Up to 50 members
+              </h3>
+              <div class="w-full h-px bg-[#dbd6cf] my-5"></div>
+              <h4>
+                <span
+                  id="price-starter"
+                  class="font-dm text-[80px] leading-20 font-bold"
+                  >$89</span
+                >
+                <span
+                  id="cycle-starter"
+                  class="font-semibold font-dm text-[18px] leading-7"
+                  >/Per month</span
+                >
+              </h4>
+              <p class="font-inter text-[18px] leading-7 font-normal mb-10">
+                This is an excellent option for people & small businesses who
+                are starting out.
+              </p>
+              <button
+                class="w-full h-10 p-8 border-2 border-black text-center rounded-[50px] cursor-pointer flex justify-center items-center group-hover:border-red-500 transition-all duration-500 relative overflow-hidden before:absolute before:inset-0 before:bg-[#fe330a] before:origin-top before:z-0 before:scale-y-0 before:transition-transform before:duration-300 hover:text-white hover:border-[#fe330a] hover:before:scale-y-100"
+              >
+                <span
+                  class="font-bold text-[16px] leading-6 font-inter relative z-10"
+                  >Choose the plan</span
+                >
+              </button>
+            </div>
+          </div>
+          <div class="bg-[#efeae3] h-auto rounded-[10px] group">
+            <div
+              class="p-10 text-left rounded-[10px] text-black group-hover:text-white group-hover:bg-black transition-all duration-500"
+            >
+              <h3 class="font-inter text-[18px] leading-7 font-normal">
+                <span class="text-[28px] leading-9 font-dm font-bold">Pro</span
+                ><br />Up to 100 members
+              </h3>
+              <div class="w-full h-px bg-[#dbd6cf] my-5"></div>
+              <h4>
+                <span
+                  id="price-pro"
+                  class="font-dm text-[80px] leading-20 font-bold"
+                  >$199</span
+                >
+                <span
+                  id="cycle-pro"
+                  class="font-semibold font-dm text-[18px] leading-7"
+                  >/Per month</span
+                >
+              </h4>
+              <p class="font-inter text-[18px] leading-7 font-normal mb-10">
+                This is an excellent option for people & small businesses who
+                are starting out.
+              </p>
+              <button
+                class="w-full h-10 p-8 border-2 border-black text-center rounded-[50px] cursor-pointer flex justify-center items-center group-hover:border-red-500 transition-all duration-500 relative overflow-hidden before:absolute before:inset-0 before:bg-[#fe330a] before:origin-top before:z-0 before:scale-y-0 before:transition-transform before:duration-300 hover:text-white hover:border-[#fe330a] hover:before:scale-y-100"
+              >
+                <span
+                  class="font-bold text-[16px] leading-6 font-inter relative z-10"
+                  >Choose the plan</span
+                >
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
       <!-- Information -->
+      <section class="bg-white py-30">
+        <!-- Content -->
+        <div class="container mx-auto flex gap-15">
+          <!-- Left -->
+          <div class="flex-3/5">
+            <h1
+              class="font-dm text-[80px] leading-20 font-bold text-black mb-8"
+            >
+              Freely ask us for more information
+            </h1>
+            <p class="font-inter font-normal text-[21px] leading-7.25 mb-12">
+              Our AI SaaS solutions can be quickly deployed, enabling users to
+              start benefiting from AI capabilities without lengthy setup and
+              development times in fast-paced industries.
+            </p>
+            <button
+              class="w-55 py-5 px-4 inline-block rounded-[50px] font-inter cursor-pointer bg-black relative overflow-hidden before:absolute before:inset-0 before:bg-[#fe330a] before:origin-top before:z-0 before:scale-y-0 before:transition-transform before:duration-300 hover:text-white hover:border-[#fe330a] hover:before:scale-y-100"
+            >
+              <span
+                class="text-white font-bold font-inter text-[16px] leading-7 relative z-10"
+                >Ask you question</span
+              >
+            </button>
+          </div>
+          <!-- Right -->
+          <div class="flex-2/5">
+            <div class="pb-5 border-b border-gray-300 active accordion-item">
+              <button
+                class="w-full flex justify-between items-center mb-5 accordion-header"
+              >
+                <span class="text-[28px] font-dm font-bold leading-8.5"
+                  >How do I start AI SaaS?</span
+                >
+                <div>
+                  <img class="icon-plus" src="./img/plus.svg" alt="icon-plus" />
+                </div>
+              </button>
+              <p
+                class="font-inter text-[18px] text-[#191919] leading-7.5 accordion-answer"
+              >
+                Go to the our official website and require users to create an
+                account. You'll need to provide some basic information and agree
+                to our terms and conditions.
+              </p>
+            </div>
+            <div class="py-5 border-b border-gray-300 accordion-item">
+              <button
+                class="w-full flex justify-between items-center mb-5 accordion-header"
+              >
+                <span class="text-[28px] font-dm font-bold leading-8.5"
+                  >Can I customize AI SaaS solutions?</span
+                >
+                <div>
+                  <img class="icon-plus" src="./img/plus.svg" alt="icon-plus" />
+                </div>
+              </button>
+              <p
+                class="font-inter text-[18px] text-[#191919] leading-7.5 accordion-answer"
+              >
+                Go to the our official website and require users to create an
+                account. You'll need to provide some basic information and agree
+                to our terms and conditions.
+              </p>
+            </div>
+            <div class="pt-5 accordion-item">
+              <button
+                class="w-full flex justify-between items-center mb-5 accordion-header"
+              >
+                <span class="text-[28px] font-dm font-bold leading-8.5"
+                  >How can AI benefit my business?</span
+                >
+                <div>
+                  <img class="icon-plus" src="./img/plus.svg" alt="icon-plus" />
+                </div>
+              </button>
+              <p
+                class="font-inter text-[18px] text-[#191919] leading-7.5 accordion-answer"
+              >
+                Go to the our official website and require users to create an
+                account. You'll need to provide some basic information and agree
+                to our terms and conditions.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
       <!-- Feedback -->
+      <section class="py-30 bg-black">
+        <h1
+          class="font-dm text-[80px] leading-20 font-bold text-white mb-8 text-center"
+        >
+          Positive feedback <br />
+          from our users
+        </h1>
+        <div class="container mx-auto grid grid-cols-3 gap-6">
+          <div class="bg-transparent border border-gray-800 rounded-xl p-6">
+            <div class="mb-5">
+              <img src="./img/rating.svg" alt="rating" />
+            </div>
+            <p
+              class="text-white text-[18px] leading-7.5 mb-7 font-inter font-normal"
+            >
+              “This AI SaaS tool has revolutionized the way we process and
+              analyze data. This is a game-changer for our business.”
+            </p>
+            <div class="flex items-center gap-3">
+              <img
+                src="./img/testimonial-img-1.jpg"
+                class="w-15 h-15 rounded-full"
+              />
+
+              <div>
+                <p
+                  class="text-white font-inter font-semibold text-[18px] leading-7.25"
+                >
+                  Max Weber
+                </p>
+                <p
+                  class="text-white text-[14px] leading-5 font-inter font-light"
+                >
+                  HR Manager
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="bg-transparent border border-gray-800 rounded-xl p-6">
+            <div class="mb-5">
+              <img src="./img/rating.svg" alt="rating" />
+            </div>
+            <p
+              class="text-white text-[18px] leading-7.5 mb-7 font-inter font-normal"
+            >
+              "It answers immediately, and we've seen a significant reduction in
+              response time. Our customers love it and so do we!"
+            </p>
+            <div class="flex items-center gap-3">
+              <img
+                src="./img/testimonial-img-2.jpg"
+                class="w-15 h-15 rounded-full"
+              />
+
+              <div>
+                <p
+                  class="text-white font-inter font-semibold text-[18px] leading-7.25"
+                >
+                  Douglas Smith
+                </p>
+                <p
+                  class="text-white text-[14px] leading-5 font-inter font-light"
+                >
+                  Businessman
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="bg-transparent border border-gray-800 rounded-xl p-6">
+            <div class="mb-5">
+              <img src="./img/rating.svg" alt="rating" />
+            </div>
+            <p
+              class="text-white text-[18px] leading-7.5 mb-7 font-inter font-normal"
+            >
+              "It is accurate, fast and supports multiple languages support. It
+              is a must for any international business success."
+            </p>
+            <div class="flex items-center gap-3">
+              <img
+                src="./img/testimonial-img-3.jpg"
+                class="w-15 h-15 rounded-full"
+              />
+
+              <div>
+                <p
+                  class="text-white font-inter font-semibold text-[18px] leading-7.25"
+                >
+                  Abraham Maslo
+                </p>
+                <p
+                  class="text-white text-[14px] leading-5 font-inter font-light"
+                >
+                  Founder @ Marketing Company
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="bg-transparent border border-gray-800 rounded-xl p-6">
+            <div class="mb-5">
+              <img src="./img/rating.svg" alt="rating" />
+            </div>
+            <p
+              class="text-white text-[18px] leading-7.5 mb-7 font-inter font-normal"
+            >
+              "Security is a top concern for us, and AI SaaS takes it seriously.
+              It's a reassuring layer of protection for our organization."
+            </p>
+            <div class="flex items-center gap-3">
+              <img
+                src="./img/testimonial-img-4.jpg"
+                class="w-15 h-15 rounded-full"
+              />
+
+              <div>
+                <p
+                  class="text-white font-inter font-semibold text-[18px] leading-7.25"
+                >
+                  Jack Fayol
+                </p>
+                <p
+                  class="text-white text-[14px] leading-5 font-inter font-light"
+                >
+                  HR Manager
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="bg-transparent border border-gray-800 rounded-xl p-6">
+            <div class="mb-5">
+              <img src="./img/rating.svg" alt="rating" />
+            </div>
+            <p
+              class="text-white text-[18px] leading-7.5 mb-7 font-inter font-normal"
+            >
+              "We were concerned about integrating their APIs were well
+              documented, and their support team was super cool."
+            </p>
+            <div class="flex items-center gap-3">
+              <img
+                src="./img/testimonial-img-5.jpg"
+                class="w-15 h-15 rounded-full"
+              />
+
+              <div>
+                <p
+                  class="text-white font-inter font-semibold text-[18px] leading-7.25"
+                >
+                  Karen Lynn
+                </p>
+                <p
+                  class="text-white text-[14px] leading-5 font-inter font-light"
+                >
+                  Software Engineer
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="bg-transparent border border-gray-800 rounded-xl p-6">
+            <div class="mb-5">
+              <img src="./img/rating.svg" alt="rating" />
+            </div>
+            <p
+              class="text-white text-[18px] leading-7.5 mb-7 font-inter font-normal"
+            >
+              "The return on investment has exceeded our expectations. it's an
+              investment in the future of our business."
+            </p>
+            <div class="flex items-center gap-3">
+              <img
+                src="./img/testimonial-img-6.jpg"
+                class="w-15 h-15 rounded-full"
+              />
+
+              <div>
+                <p
+                  class="text-white font-inter font-semibold text-[18px] leading-7.25"
+                >
+                  Henry Ochi
+                </p>
+                <p
+                  class="text-white text-[14px] leading-5 font-inter font-light"
+                >
+                  Bank Manager
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
     <!-- Footer -->
-    <footer></footer>
+    <footer class="bg-[#efeae3]">
+      <!-- Footer top -->
+      <div class="pt-30 pb-20 flex items-center justify-center gap-8">
+        <img src="./img/footer-text-slider-icon.svg" alt="footer-icon" />
+        <h1
+          class="font-dm text-[80px] leading-20 font-bold text-black text-center"
+        >
+          Start building software
+        </h1>
+      </div>
+      <div class="container mx-auto w-full h-px bg-[#dbd6cf]"></div>
+      <!-- Footer mid -->
+      <div class="container mx-auto flex py-25 gap-20">
+        <div class="flex flex-2 flex-col gap-6">
+          <a href="#"><img src="./img/logo.png" alt="logo" /></a>
+          <p
+            class="font-inter font-normal text-[18px] leading-7.5 text-[#191919]"
+          >
+            Our mission is to harness the power of AI to solve complex business
+            challenges & decision-makers with data-driven insights, and enhance
+            user experiences across digital platforms.
+          </p>
+          <p
+            class="font-inter font-normal text-[18px] leading-7.5 text-[#191919]"
+          >
+            Website: www.example.com
+          </p>
+        </div>
+        <div class="flex flex-col flex-1 gap-6">
+          <h3 class="font-dm font-semibold text-[21px] leading-7">
+            Primary Pages
+          </h3>
+          <ul
+            class="font-inter font-normal text-[18px] leading-7.5 text-[#191919] flex flex-col gap-2.5"
+          >
+            <li
+              class="cursor-pointer hover:text-[#fe330a] transition-all duration-500"
+            >
+              Home
+            </li>
+            <li
+              class="cursor-pointer hover:text-[#fe330a] transition-all duration-500"
+            >
+              About Us
+            </li>
+            <li
+              class="cursor-pointer hover:text-[#fe330a] transition-all duration-500"
+            >
+              Services
+            </li>
+            <li
+              class="cursor-pointer hover:text-[#fe330a] transition-all duration-500"
+            >
+              Pricing
+            </li>
+            <li
+              class="cursor-pointer hover:text-[#fe330a] transition-all duration-500"
+            >
+              Contact
+            </li>
+          </ul>
+        </div>
+        <div class="flex flex-col flex-1 gap-6">
+          <h3 class="font-dm font-semibold text-[21px] leading-7">
+            Utility pages
+          </h3>
+          <ul
+            class="font-inter font-normal text-[18px] leading-7.5 text-[#191919] flex flex-col gap-2.5"
+          >
+            <li
+              class="cursor-pointer hover:text-[#fe330a] transition-all duration-500"
+            >
+              Signup
+            </li>
+            <li
+              class="cursor-pointer hover:text-[#fe330a] transition-all duration-500"
+            >
+              Login
+            </li>
+            <li
+              class="cursor-pointer hover:text-[#fe330a] transition-all duration-500"
+            >
+              404 Not found
+            </li>
+            <li
+              class="cursor-pointer hover:text-[#fe330a] transition-all duration-500"
+            >
+              Password Reset
+            </li>
+          </ul>
+        </div>
+        <div class="flex flex-col flex-2 gap-6">
+          <h3 class="font-dm font-semibold text-[21px] leading-7">
+            Subscribe to our newsletter
+          </h3>
+          <div class="w-75 h-12.5 relative">
+            <input
+              class="w-full h-full border border-black rounded-[50px] py-4.5 px-6"
+              type="email"
+              placeholder="Enter your email"
+            />
+            <button
+              class="absolute right-1.25 top-[50%] inline-block h-10 px-6 rounded-[50px] bg-black translate-y-[-50%] transition-all duration-500 hover:bg-orange-500 cursor-pointer"
+            >
+              <img src="./img/arrow-right-large.svg" alt="" />
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="container mx-auto w-full h-px bg-[#dbd6cf]"></div>
+      <!-- Footer Bottom -->
+      <div class="py-9 text-center">
+        <p
+          class="font-inter font-normal text-[18px] leading-7.5 text-[#191919]"
+        >
+          © Copyright 2023, All Rights Reserved by Mthemeus
+        </p>
+      </div>
+    </footer>
+    <!-- Javascript -->
+    <script src="./main.js"></script>
   </body>
 </html>

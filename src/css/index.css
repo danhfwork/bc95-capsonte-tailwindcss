@@ -5,3 +5,28 @@
 
   --font-dm: "DM Sans", sans-serif;
 }
+
+.active1 {
+  background: #000;
+  color: white;
+}
+
+@layer components {
+  .accordion-answer {
+    @apply max-h-0 overflow-hidden opacity-0;
+
+    transition: all 0.5s;
+    transform: translateY(0.25rem);
+  }
+
+  .accordion-item.active .accordion-answer {
+    max-height: 200px;
+    @apply opacity-100;
+
+    transform: translateY(0);
+  }
+
+  .accordion-item.active .icon-plus {
+    @apply rotate-45;
+  }
+}
