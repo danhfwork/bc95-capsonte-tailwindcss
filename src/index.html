@@ -19,6 +19,17 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <!-- Animate -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+      integrity="sha512-c42qTSw/wPZ3/5LBzD+Bw5f7bSF2oxou6wEb+I/lqeaKV5FDIfMvvRp772y4jcJLKuGUOpbJMdg/BTl50fJYAw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Slicky -->
+    <link rel="stylesheet" type="text/css" href="./lib/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="./lib/slick/slick-theme.css" />
     <!-- CSS -->
     <link rel="stylesheet" href="./css/output.css" />
   </head>
@@ -267,12 +278,22 @@
       <!-- Carousel -->
       <section class="bg-[#efeae3] w-full h-auto">
         <div class="carousel-content container mx-auto text-center pt-30">
-          <h1 class="text-black font-dm font-bold text-[120px] leading-30 mb-6">
+          <h1
+            class="text-black font-dm font-bold text-[120px] leading-30 mb-6 jos"
+            data-jos_once="1"
+            data-jos_animation="fade-up"
+            data-jos_counter="1"
+            data-jos_scrolldirection="down"
+          >
             Simplify your SaaS <br />
             solution with AI
           </h1>
           <p
-            class="text-[#191919] font-inter font-semibold text-[20px] leading[28px]"
+            class="text-[#191919] font-inter font-semibold text-[20px] leading[28px] jos"
+            data-jos_once="1"
+            data-jos_animation="fade-up"
+            data-jos_counter="1"
+            data-jos_scrolldirection="down"
           >
             Our AI SAAS tool is a cloud-based software delivery model. It helps
             businesses forecast demand for <br />
@@ -281,7 +302,11 @@
           </p>
         </div>
         <div
-          class="carousel-btn flex items-center gap-10 justify-center text-center pt-10"
+          class="carousel-btn flex items-center gap-10 justify-center text-center pt-10 jos"
+          data-jos_once="1"
+          data-jos_animation="fade"
+          data-jos_counter="1"
+          data-jos_scrolldirection="down"
         >
           <a
             class="w-50 py-3 bg-black text-white border border-black rounded-[50px] font-inter text-center font-bold cursor-pointer relative overflow-hidden before:absolute before:inset-0 before:bg-[#fe330a] before:origin-top before:z-0 before:scale-y-0 before:transition-transform before:duration-300 hover:text-white hover:border-[#fe330a] hover:before:scale-y-100"
@@ -294,7 +319,13 @@
             <span class="relative z-10">Learn more</span>
           </a>
         </div>
-        <div class="carousel-dashboard container mx-auto my-20">
+        <div
+          class="carousel-dashboard container mx-auto my-20 jos"
+          data-jos_once="1"
+          data-jos_animation="zoom"
+          data-jos_counter="1"
+          data-jos_scrolldirection="down"
+        >
           <img src="./img/hero-dashboard.jpg" alt="dashboard" />
         </div>
         <div class="carousel-slider mt-10">
@@ -302,15 +333,32 @@
             class="carousel-slider-content container mx-auto border-t border-t-gray-300"
           >
             <p
-              class="text-[#191919] text-[18px] leading-7 font-inter font-normal text-center py-18"
+              class="text-[#191919] text-[18px] leading-7 font-inter font-normal text-center py-18 jos"
+              data-jos_once="1"
+              data-jos_animation="fade-up"
+              data-jos_counter="1"
+              data-jos_scrolldirection="down"
             >
               Companies of all sizes trust us to find AI SaaS critical to their
               growth and innovation
             </p>
           </div>
           <div
-            class="slider container mx-auto flex justify-between items-center pb-30"
+            class="slider container mx-auto flex justify-around items-center pb-30 jos"
+            data-jos_once="1"
+            data-jos_animation="fade"
+            data-jos_counter="1"
+            data-jos_scrolldirection="down"
           >
+            <div class="slide">
+              <img src="./img/brand-1.png" alt="sitemark" />
+            </div>
+            <div class="slide">
+              <img src="./img/brand-2.png" alt="greennish" />
+            </div>
+            <div class="slide">
+              <img src="./img/brand-3.png" alt="luminous" />
+            </div>
             <div class="slide">
               <img src="./img/brand-4.png" alt="network" />
             </div>
@@ -321,23 +369,41 @@
               <img src="./img/brand-1.png" alt="sitemark" />
             </div>
             <div class="slide">
-              <img src="./img/brand-2.png" alt="greenish" />
+              <img src="./img/brand-2.png" alt="greennish" />
             </div>
             <div class="slide">
               <img src="./img/brand-3.png" alt="luminous" />
+            </div>
+            <div class="slide">
+              <img src="./img/brand-4.png" alt="network" />
+            </div>
+            <div class="slide">
+              <img src="./img/brand-5.png" alt="umbrella" />
             </div>
           </div>
         </div>
       </section>
       <!-- Features -->
       <section class="bg-white container mx-auto pt-30">
-        <h1 class="font-dm text-[80px] leading-20 font-bold text-black mb-20">
+        <h1
+          class="font-dm text-[80px] leading-20 font-bold text-black mb-20 jos"
+          data-jos_once="1"
+          data-jos_animation="fade-up"
+          data-jos_counter="1"
+          data-jos_scrolldirection="down"
+        >
           Core features that <br />
           make it valuable
         </h1>
-        <div class="flex">
+        <div
+          class="flex jos"
+          data-jos_once="1"
+          data-jos_animation="fade-up"
+          data-jos_counter="1"
+          data-jos_scrolldirection="down"
+        >
           <div
-            class="group features-item w-80 h-95 border border-black bg-transparent hover:bg-black transition-all duration-300"
+            class="group features-item flex-1 min-h-95 border border-black bg-transparent hover:bg-black transition-all duration-300"
           >
             <div class="p-5 flex flex-col gap-10">
               <div class="w-17.5 h-17.5 relative">
@@ -368,7 +434,7 @@
             </div>
           </div>
           <div
-            class="group features-item w-80 h-95 border border-black bg-transparent hover:bg-black transition-all duration-300"
+            class="group features-item flex-1 min-h-95 border border-black bg-transparent hover:bg-black transition-all duration-300"
           >
             <div class="p-5 flex flex-col gap-10">
               <div class="w-17.5 h-17.5 relative">
@@ -399,7 +465,7 @@
             </div>
           </div>
           <div
-            class="group features-item w-80 h-95 border border-black bg-transparent hover:bg-black transition-all duration-300"
+            class="group features-item flex-1 min-h-95 border border-black bg-transparent hover:bg-black transition-all duration-300"
           >
             <div class="p-5 flex flex-col gap-10">
               <div class="w-17.5 h-17.5 relative">
@@ -430,7 +496,7 @@
             </div>
           </div>
           <div
-            class="group features-item w-80 h-95 border border-black bg-transparent hover:bg-black transition-all duration-300"
+            class="group features-item flex-1 min-h-95 border border-black bg-transparent hover:bg-black transition-all duration-300"
           >
             <div class="p-5 flex flex-col gap-10">
               <div class="w-17.5 h-17.5 relative">
@@ -466,14 +532,26 @@
       <section
         class="bg-white pt-35 container mx-auto flex justify-between items-center gap-32"
       >
-        <div class="flex-1 w-131.5 h-125">
+        <div
+          class="flex-1 jos"
+          data-jos_once="1"
+          data-jos_animation="fade-left"
+          data-jos_counter="1"
+          data-jos_scrolldirection="down"
+        >
           <img
             class="w-full h-full"
             src="./img/content-image-1.jpg"
             alt="accessible"
           />
         </div>
-        <div class="flex-1">
+        <div
+          class="flex-1 jos"
+          data-jos_once="1"
+          data-jos_animation="fade-up"
+          data-jos_counter="1"
+          data-jos_scrolldirection="down"
+        >
           <h1 class="font-dm text-[80px] leading-20 font-bold text-black mb-5">
             Accessible to a wider audience
           </h1>
@@ -493,7 +571,13 @@
       <section
         class="bg-white container mx-auto pt-30 flex justify-between gap-32"
       >
-        <div class="flex-6/11">
+        <div
+          class="flex-6/11 jos"
+          data-jos_once="1"
+          data-jos_animation="fade-right"
+          data-jos_counter="1"
+          data-jos_scrolldirection="down"
+        >
           <h1 class="font-dm text-[80px] leading-20 font-bold text-black mb-6">
             Providing quick deploy solutions
           </h1>
@@ -523,7 +607,13 @@
             </li>
           </ul>
         </div>
-        <div class="flex-5/11">
+        <div
+          class="flex-5/11 jos"
+          data-jos_once="1"
+          data-jos_animation="fade-left"
+          data-jos_counter="1"
+          data-jos_scrolldirection="down"
+        >
           <img
             class="w-full h-auto"
             src="./img/content-image-2.jpg"
@@ -534,20 +624,25 @@
       <!-- Counter -->
       <section class="pt-30 max-w-[95%] mx-auto">
         <div
-          class="grid grid-cols-[45%_55%] bg-black overflow-hidden rounded-[50px]"
+          class="grid grid-cols-[45%_55%] bg-black overflow-hidden rounded-[50px] jos"
+          data-jos_once="1"
+          data-jos_animation="fade-up"
+          data-jos_counter="1"
+          data-jos_scrolldirection="down"
         >
-          <div class="relative">
+          <div class="relative before:z-[-1] overflow-hidden">
             <img
               class="w-full h-full object-cover object-center rounded-[50px]"
               src="./img/funfact-image.jpg"
               alt="funfact-image"
             />
             <div class="absolute inset-0 flex items-center justify-center">
-              <button
-                class="w-30 h-30 rounded-full border-2 border-black flex items-center justify-center bg-transparent text-[18px] font-inter font-bold leading-4.5 cursor-pointer hover:text-white hover:bg-[#fe330a] transition-all duration-500"
+              <a
+                data-fslightbox="gallery"
+                href="https://www.youtube.com/watch?v=3nQNiWdeH2Q"
+                class="relative w-30 h-30 rounded-full border-2 border-black flex items-center justify-center bg-transparent text-[18px] font-inter font-bold leading-4.5 cursor-pointer hover:text-white hover:bg-[#fe330a] transition-all duration-500 before:content-[''] before:absolute before:inset-0 before:rounded-full before:border-2 before:bg-gray-900 before:z-10 before:animate-[ripple_2s_linear_infinite]"
+                >Play</a
               >
-                Play
-              </button>
             </div>
           </div>
           <div class="py-32 pl-16 pr-28 bg-black">
@@ -570,7 +665,7 @@
                   <h3
                     class="text-[#fe330a] text-[120px] leading-30 font-bold font-dm"
                   >
-                    92%
+                    <span class="count-up">92</span>%
                   </h3>
                   <span
                     class="text-white text-[21px] leading-7 font-normal font-inter"
@@ -581,7 +676,7 @@
                   <h3
                     class="text-[#fe330a] text-[120px] leading-30 font-bold font-dm"
                   >
-                    75%
+                    <span class="count-up">75</span>%
                   </h3>
                   <span
                     class="text-white text-[21px] leading-7 font-normal font-inter"
@@ -597,12 +692,22 @@
       <section
         class="text-center flex flex-col justify-center items-center pt-30"
       >
-        <h1 class="font-dm text-[80px] leading-20 font-bold text-black mb-10">
+        <h1
+          class="font-dm text-[80px] leading-20 font-bold text-black mb-10 jos"
+          data-jos_once="1"
+          data-jos_animation="fade-up"
+          data-jos_counter="1"
+          data-jos_scrolldirection="down"
+        >
           Cost-effectively <br />
           build any software
         </h1>
         <div
-          class="flex justify-center gap-4 items-center w-90 rounded-full border-2 border-black font-semibold mb-16"
+          class="flex justify-center gap-4 items-center w-90 rounded-full border-2 border-black font-semibold mb-16 jos"
+          data-jos_once="1"
+          data-jos_animation="fade"
+          data-jos_counter="1"
+          data-jos_scrolldirection="down"
         >
           <button
             id="btn-monthly"
@@ -619,7 +724,14 @@
         </div>
         <!-- Item Counter -->
         <div class="grid grid-cols-3 gap-6 container mx-auto">
-          <div class="bg-[#efeae3] h-auto rounded-[10px] group">
+          <div
+            class="bg-[#efeae3] h-auto rounded-[10px] group jos"
+            data-jos_once="1"
+            data-jos_animation="flip"
+            data-jos_counter="1"
+            data-jos_scrolldirection="down"
+            data-jos_delay="0"
+          >
             <div
               class="p-10 text-left rounded-[10px] text-black group-hover:text-white group-hover:bg-black transition-all duration-500"
             >
@@ -655,7 +767,14 @@
               </button>
             </div>
           </div>
-          <div class="bg-[#efeae3] h-auto rounded-[10px] group">
+          <div
+            class="bg-[#efeae3] h-auto rounded-[10px] group jos"
+            data-jos_once="1"
+            data-jos_animation="flip"
+            data-jos_counter="1"
+            data-jos_scrolldirection="down"
+            data-jos_delay="0"
+          >
             <div
               class="p-10 text-left rounded-[10px] text-black group-hover:text-white group-hover:bg-black transition-all duration-500"
             >
@@ -691,7 +810,14 @@
               </button>
             </div>
           </div>
-          <div class="bg-[#efeae3] h-auto rounded-[10px] group">
+          <div
+            class="bg-[#efeae3] h-auto rounded-[10px] group jos"
+            data-jos_once="1"
+            data-jos_animation="flip"
+            data-jos_counter="1"
+            data-jos_scrolldirection="down"
+            data-jos_delay="0"
+          >
             <div
               class="p-10 text-left rounded-[10px] text-black group-hover:text-white group-hover:bg-black transition-all duration-500"
             >
@@ -733,7 +859,13 @@
         <!-- Content -->
         <div class="container mx-auto flex gap-15">
           <!-- Left -->
-          <div class="flex-3/5">
+          <div
+            class="flex-3/5 jos"
+            data-jos_once="1"
+            data-jos_animation="fade-right"
+            data-jos_counter="1"
+            data-jos_scrolldirection="down"
+          >
             <h1
               class="font-dm text-[80px] leading-20 font-bold text-black mb-8"
             >
@@ -754,7 +886,13 @@
             </button>
           </div>
           <!-- Right -->
-          <div class="flex-2/5">
+          <div
+            class="flex-2/5 jos"
+            data-jos_once="1"
+            data-jos_animation="fade-left"
+            data-jos_counter="1"
+            data-jos_scrolldirection="down"
+          >
             <div class="pb-5 border-b border-gray-300 active accordion-item">
               <button
                 class="w-full flex justify-between items-center mb-5 accordion-header"
@@ -824,7 +962,14 @@
           from our users
         </h1>
         <div class="container mx-auto grid grid-cols-3 gap-6">
-          <div class="bg-transparent border border-gray-800 rounded-xl p-6">
+          <div
+            class="bg-transparent border border-gray-800 rounded-xl p-6 jos"
+            data-jos_once="1"
+            data-jos_animation="fade-left"
+            data-jos_counter="1"
+            data-jos_scrolldirection="down"
+            data-jos_delay="0.1"
+          >
             <div class="mb-5">
               <img src="./img/rating.svg" alt="rating" />
             </div>
@@ -854,7 +999,14 @@
               </div>
             </div>
           </div>
-          <div class="bg-transparent border border-gray-800 rounded-xl p-6">
+          <div
+            class="bg-transparent border border-gray-800 rounded-xl p-6 jos"
+            data-jos_once="1"
+            data-jos_animation="fade-left"
+            data-jos_counter="1"
+            data-jos_scrolldirection="down"
+            data-jos_delay="0.2"
+          >
             <div class="mb-5">
               <img src="./img/rating.svg" alt="rating" />
             </div>
@@ -884,7 +1036,14 @@
               </div>
             </div>
           </div>
-          <div class="bg-transparent border border-gray-800 rounded-xl p-6">
+          <div
+            class="bg-transparent border border-gray-800 rounded-xl p-6 jos"
+            data-jos_once="1"
+            data-jos_animation="fade-left"
+            data-jos_counter="1"
+            data-jos_scrolldirection="down"
+            data-jos_delay="0.3"
+          >
             <div class="mb-5">
               <img src="./img/rating.svg" alt="rating" />
             </div>
@@ -914,7 +1073,14 @@
               </div>
             </div>
           </div>
-          <div class="bg-transparent border border-gray-800 rounded-xl p-6">
+          <div
+            class="bg-transparent border border-gray-800 rounded-xl p-6 jos"
+            data-jos_once="1"
+            data-jos_animation="fade-right"
+            data-jos_counter="1"
+            data-jos_scrolldirection="down"
+            data-jos_delay="0.1"
+          >
             <div class="mb-5">
               <img src="./img/rating.svg" alt="rating" />
             </div>
@@ -944,7 +1110,14 @@
               </div>
             </div>
           </div>
-          <div class="bg-transparent border border-gray-800 rounded-xl p-6">
+          <div
+            class="bg-transparent border border-gray-800 rounded-xl p-6 jos"
+            data-jos_once="1"
+            data-jos_animation="fade-right"
+            data-jos_counter="1"
+            data-jos_scrolldirection="down"
+            data-jos_delay="0.2"
+          >
             <div class="mb-5">
               <img src="./img/rating.svg" alt="rating" />
             </div>
@@ -974,7 +1147,14 @@
               </div>
             </div>
           </div>
-          <div class="bg-transparent border border-gray-800 rounded-xl p-6">
+          <div
+            class="bg-transparent border border-gray-800 rounded-xl p-6 jos"
+            data-jos_once="1"
+            data-jos_animation="fade-right"
+            data-jos_counter="1"
+            data-jos_scrolldirection="down"
+            data-jos_delay="0.3"
+          >
             <div class="mb-5">
               <img src="./img/rating.svg" alt="rating" />
             </div>
@@ -1010,13 +1190,35 @@
     <!-- Footer -->
     <footer class="bg-[#efeae3]">
       <!-- Footer top -->
-      <div class="pt-30 pb-20 flex items-center justify-center gap-8">
-        <img src="./img/footer-text-slider-icon.svg" alt="footer-icon" />
-        <h1
-          class="font-dm text-[80px] leading-20 font-bold text-black text-center"
-        >
-          Start building software
-        </h1>
+      <div class="pt-30 pb-20">
+        <div class="overflow-hidden">
+          <div class="flex gap-32 animate-[righttoleft_10s_linear_infinite]">
+            <div class="flex w-full items-center whitespace-nowrap gap-8">
+              <img src="./img/footer-text-slider-icon.svg" alt="footer-icon" />
+              <h1
+                class="font-dm text-[80px] leading-20 font-bold text-black text-center"
+              >
+                Start building software
+              </h1>
+            </div>
+            <div class="flex w-full items-center whitespace-nowrap gap-8">
+              <img src="./img/footer-text-slider-icon.svg" alt="footer-icon" />
+              <h1
+                class="font-dm text-[80px] leading-20 font-bold text-black text-center"
+              >
+                Start building software
+              </h1>
+            </div>
+            <div class="flex w-full items-center whitespace-nowrap gap-8">
+              <img src="./img/footer-text-slider-icon.svg" alt="footer-icon" />
+              <h1
+                class="font-dm text-[80px] leading-20 font-bold text-black text-center"
+              >
+                Start building software
+              </h1>
+            </div>
+          </div>
+        </div>
       </div>
       <div class="container mx-auto w-full h-px bg-[#dbd6cf]"></div>
       <!-- Footer mid -->
@@ -1128,6 +1330,53 @@
       </div>
     </footer>
     <!-- Javascript -->
+    <!-- jquery -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <!-- waypoint -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"
+      integrity="sha512-CEiA+78TpP9KAIPzqBvxUv8hy41jyI3f2uHi7DGp/Y/Ka973qgSdybNegWFciqh6GrN2UePx2KkflnQUbUhNIA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <!-- count-up -->
+    <script src="./lib/count-up/jquery.countup.min.js"></script>
+    <script>
+      $(".count-up").countUp();
+    </script>
+    <!-- Slicky -->
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
+    <script type="text/javascript" src="./lib/slick/slick.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $(".slider").slick({
+          slidesToShow: 5,
+          slidesToScroll: 1,
+          arrows: false,
+          infinite: true,
+          autoplay: true,
+        });
+      });
+    </script>
+    <!-- JOS -->
+    <script src="https://unpkg.com/jos-animation/dist/jos.min.js"></script>
+    <script>
+      JOS.init({});
+    </script>
+    <!-- FS Lightbox -->
+    <script src="https://cdn.jsdelivr.net/npm/fslightbox/index.js"></script>
     <script src="./main.js"></script>
   </body>
 </html>

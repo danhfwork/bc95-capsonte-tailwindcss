@@ -30,3 +30,59 @@
     @apply rotate-45;
   }
 }
+
+@keyframes ripple {
+  0% {
+    transform: scale(1);
+    opacity: 0.3;
+  }
+  100% {
+    transform: scale(2);
+    opacity: 0;
+  }
+}
+@keyframes righttoleft {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes jump-scroll {
+  /* Logo 1 đứng yên */
+  0%,
+  15% {
+    transform: translateX(0);
+  }
+
+  /* Nhảy sang Logo 2 */
+  20%,
+  35% {
+    transform: translateX(calc(-1 / 5 * 100%));
+  }
+
+  /* Nhảy sang Logo 3 */
+  40%,
+  55% {
+    transform: translateX(calc(-2 / 5 * 100%));
+  }
+
+  /* Nhảy sang Logo 4 */
+  60%,
+  75% {
+    transform: translateX(calc(-3 / 5 * 100%));
+  }
+
+  /* Nhảy sang Logo 5 */
+  80%,
+  95% {
+    transform: translateX(calc(-4 / 5 * 100%));
+  }
+
+  /* Reset về vị trí đầu của bộ logo thứ 2 (giống hệt bộ 1) */
+  100% {
+    transform: translateX(calc(-5 / 5 * 100%));
+  }
+}

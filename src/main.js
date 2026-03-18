@@ -21,11 +21,11 @@ function updatePrices(type) {
 
   // 3. Style Button active
   if (type === 'monthly') {
-    btnMonthly.classList.add('active');
-    btnAnnually.classList.remove('active');
+    btnMonthly.classList.add('active1');
+    btnAnnually.classList.remove('active1');
   } else {
-    btnAnnually.classList.add('active');
-    btnMonthly.classList.remove('active');
+    btnAnnually.classList.add('active1');
+    btnMonthly.classList.remove('active1');
   }
 }
 
