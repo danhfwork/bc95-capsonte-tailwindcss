@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Azzle - AI Technology & Startup HTML Template</title>
+    <link rel="icon" type="image/png" href="./img/favicon.png" />
     <!-- Font chữ -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -32,7 +33,7 @@
         <div class="logo">
           <img src="./img/logo-dark.png" alt="logo" />
         </div>
-        <div class="nav-bar font-inter">
+        <div class="nav-bar font-inter hidden lg:block">
           <ul class="flex items-center justify-between gap-13">
             <li
               class="font-semibold py-4 flex gap-0.5 items-center justify-center relative group"
@@ -251,7 +252,7 @@
             </li>
           </ul>
         </div>
-        <div class="nav-btn flex items-center gap-6">
+        <div class="nav-btn items-center gap-6 hidden lg:flex">
           <a
             class="w-30 py-3 bg-transparent text-black border border-black rounded-[50px] font-inter text-center font-bold cursor-pointer relative overflow-hidden before:absolute before:inset-0 before:bg-[#fe330a] before:origin-top before:z-0 before:scale-y-0 before:transition-transform before:duration-300 hover:text-white hover:border-[#fe330a] hover:before:scale-y-100"
           >
@@ -271,7 +272,7 @@
       <section class="bg-[#efeae3] w-full h-auto">
         <div class="carousel-content container mx-auto text-center pt-30">
           <h1
-            class="text-black font-dm font-bold text-[120px] leading-30 mb-6 jos"
+            class="text-black font-dm font-bold text-[48px] leading-12 lg:text-[120px] lg:leading-30 mb-6 jos"
             data-jos_once="1"
             data-jos_animation="fade-up"
             data-jos_counter="1"
@@ -378,7 +379,7 @@
       <!-- Features -->
       <section class="bg-white container mx-auto pt-30">
         <h1
-          class="font-dm text-[80px] leading-20 font-bold text-black mb-20 jos"
+          class="font-dm text-[36px] leading-10 lg:text-[80px] lg:leading-20 font-bold text-black mb-20 jos"
           data-jos_once="1"
           data-jos_animation="fade-up"
           data-jos_counter="1"
@@ -388,7 +389,7 @@
           make it valuable
         </h1>
         <div
-          class="flex jos"
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 jos"
           data-jos_once="1"
           data-jos_animation="fade-up"
           data-jos_counter="1"
@@ -522,21 +523,9 @@
       </section>
       <!-- Accessible -->
       <section
-        class="bg-white pt-35 container mx-auto flex justify-between items-center gap-32"
+        class="bg-white pt-35 container mx-auto flex flex-col lg:flex-row-reverse justify-between items-center gap-32"
       >
-        <div
-          class="flex-1 jos"
-          data-jos_once="1"
-          data-jos_animation="fade-left"
-          data-jos_counter="1"
-          data-jos_scrolldirection="down"
-        >
-          <img
-            class="w-full h-full"
-            src="./img/content-image-1.jpg"
-            alt="accessible"
-          />
-        </div>
+        <!-- Content -->
         <div
           class="flex-1 jos"
           data-jos_once="1"
@@ -558,10 +547,24 @@
             resources or expertise to develop.
           </p>
         </div>
+        <!-- IMG -->
+        <div
+          class="flex-1 jos"
+          data-jos_once="1"
+          data-jos_animation="fade-left"
+          data-jos_counter="1"
+          data-jos_scrolldirection="down"
+        >
+          <img
+            class="w-full h-full"
+            src="./img/content-image-1.jpg"
+            alt="accessible"
+          />
+        </div>
       </section>
       <!-- Solutions -->
       <section
-        class="bg-white container mx-auto pt-30 flex justify-between gap-32"
+        class="bg-white container mx-auto pt-30 flex flex-col lg:flex-row justify-between gap-32"
       >
         <div
           class="flex-6/11 jos"
@@ -616,7 +619,7 @@
       <!-- Counter -->
       <section class="pt-30 max-w-[95%] mx-auto">
         <div
-          class="grid grid-cols-[45%_55%] bg-black overflow-hidden rounded-[50px] jos"
+          class="grid grid-cols-1 lg:grid-cols-[45%_55%] bg-black overflow-hidden rounded-[50px] jos"
           data-jos_once="1"
           data-jos_animation="fade-up"
           data-jos_counter="1"
@@ -640,38 +643,40 @@
           <div class="py-32 pl-16 pr-28 bg-black">
             <div>
               <h1
-                class="font-dm text-[80px] leading-20 font-bold text-white mb-6"
+                class="font-dm text-[36px] leading-10 lg:text-[80px] lg:leading-20 font-bold text-white mb-6"
               >
                 AI-powered that streamline tasks
               </h1>
               <p
-                class="font-inter font-normal text-white leading-7.25] text-[21px]"
+                class="font-inter font-normal text-white text-[18px] leading-6.25 lg:leading-7.25] lg:text-[21px]"
               >
                 As your business grows or your AI SaaS needs change, you can
                 easily adjust your subscription level to match those needs. This
                 flexibility ensures that AI remains an asset.
               </p>
               <div class="my-14 h-px w-full bg-gray-800"></div>
-              <ul class="flex justify-between">
-                <li>
+              <ul
+                class="flex flex-col gap-10 justify-center items-center lg:flex-row lg:justify-between"
+              >
+                <li class="text-center">
                   <h3
-                    class="text-[#fe330a] text-[120px] leading-30 font-bold font-dm"
+                    class="text-[#fe330a] text-[48px] leading-12 lg:text-[120px] lg:leading-30 font-bold font-dm"
                   >
                     <span class="count-up">92</span>%
                   </h3>
                   <span
-                    class="text-white text-[21px] leading-7 font-normal font-inter"
+                    class="text-white text-[18px] lg:text-[21px] leading-7 font-normal font-inter"
                     >Customer service inquiries</span
                   >
                 </li>
-                <li>
+                <li class="text-center">
                   <h3
-                    class="text-[#fe330a] text-[120px] leading-30 font-bold font-dm"
+                    class="text-[#fe330a] text-[48px] leading-12 lg:text-[120px] lg:leading-30 font-bold font-dm"
                   >
                     <span class="count-up">75</span>%
                   </h3>
                   <span
-                    class="text-white text-[21px] leading-7 font-normal font-inter"
+                    class="text-white text-[18px] lg:text-[21px] leading-7 font-normal font-inter"
                     >Using financial institutions</span
                   >
                 </li>
@@ -685,7 +690,7 @@
         class="text-center flex flex-col justify-center items-center pt-30"
       >
         <h1
-          class="font-dm text-[80px] leading-20 font-bold text-black mb-10 jos"
+          class="font-dm text-[36px] leading-10 lg:text-[80px] lg:leading-20 font-bold text-black mb-10 jos"
           data-jos_once="1"
           data-jos_animation="fade-up"
           data-jos_counter="1"
@@ -715,7 +720,10 @@
           </button>
         </div>
         <!-- Item Counter -->
-        <div class="grid grid-cols-3 gap-6 container mx-auto">
+        <div
+          id="monthly"
+          class="grid grid-cols-1 lg:grid-cols-3 gap-6 container mx-auto"
+        >
           <div
             class="bg-[#efeae3] h-auto rounded-[10px] group jos"
             data-jos_once="1"
@@ -845,11 +853,145 @@
             </div>
           </div>
         </div>
+        <!-- Annually -->
+        <div
+          id="annually"
+          class="grid-cols-1 lg:grid-cols-3 gap-6 container mx-auto hidden"
+        >
+          <div
+            class="bg-[#efeae3] h-auto rounded-[10px] group jos"
+            data-jos_once="1"
+            data-jos_animation="flip"
+            data-jos_counter="1"
+            data-jos_scrolldirection="down"
+            data-jos_delay="0"
+          >
+            <div
+              class="p-10 text-left rounded-[10px] text-black group-hover:text-white group-hover:bg-black transition-all duration-500"
+            >
+              <h3 class="font-inter text-[18px] leading-7 font-normal">
+                <span class="text-[28px] leading-9 font-dm font-bold"
+                  >Beginner</span
+                ><br />Up to 10 members
+              </h3>
+              <div class="w-full h-px bg-[#dbd6cf] my-5"></div>
+              <h4>
+                <span
+                  id="price-beginner"
+                  class="font-dm text-[80px] leading-20 font-bold"
+                  >$240</span
+                >
+                <span
+                  id="cycle-beginner"
+                  class="font-semibold font-dm text-[18px] leading-7"
+                  >/Per year</span
+                >
+              </h4>
+              <p class="font-inter text-[18px] leading-7 font-normal mb-10">
+                This is an excellent option for people & small businesses who
+                are starting out.
+              </p>
+              <button
+                class="w-full h-10 p-8 border-2 border-black text-center rounded-[50px] cursor-pointer flex justify-center items-center group-hover:border-red-500 transition-all duration-500 relative overflow-hidden before:absolute before:inset-0 before:bg-[#fe330a] before:origin-top before:z-0 before:scale-y-0 before:transition-transform before:duration-300 hover:text-white hover:border-[#fe330a] hover:before:scale-y-100"
+              >
+                <span
+                  class="font-bold text-[16px] leading-6 font-inter relative z-10"
+                  >Choose the plan</span
+                >
+              </button>
+            </div>
+          </div>
+          <div
+            class="bg-[#efeae3] h-auto rounded-[10px] group jos"
+            data-jos_once="1"
+            data-jos_animation="flip"
+            data-jos_counter="1"
+            data-jos_scrolldirection="down"
+            data-jos_delay="0"
+          >
+            <div
+              class="p-10 text-left rounded-[10px] text-black group-hover:text-white group-hover:bg-black transition-all duration-500"
+            >
+              <h3 class="font-inter text-[18px] leading-7 font-normal">
+                <span class="text-[28px] leading-9 font-dm font-bold"
+                  >Starter</span
+                ><br />Up to 50 members
+              </h3>
+              <div class="w-full h-px bg-[#dbd6cf] my-5"></div>
+              <h4>
+                <span
+                  id="price-starter"
+                  class="font-dm text-[80px] leading-20 font-bold"
+                  >$960</span
+                >
+                <span
+                  id="cycle-starter"
+                  class="font-semibold font-dm text-[18px] leading-7"
+                  >/Per year</span
+                >
+              </h4>
+              <p class="font-inter text-[18px] leading-7 font-normal mb-10">
+                This is an excellent option for people & small businesses who
+                are starting out.
+              </p>
+              <button
+                class="w-full h-10 p-8 border-2 border-black text-center rounded-[50px] cursor-pointer flex justify-center items-center group-hover:border-red-500 transition-all duration-500 relative overflow-hidden before:absolute before:inset-0 before:bg-[#fe330a] before:origin-top before:z-0 before:scale-y-0 before:transition-transform before:duration-300 hover:text-white hover:border-[#fe330a] hover:before:scale-y-100"
+              >
+                <span
+                  class="font-bold text-[16px] leading-6 font-inter relative z-10"
+                  >Choose the plan</span
+                >
+              </button>
+            </div>
+          </div>
+          <div
+            class="bg-[#efeae3] h-auto rounded-[10px] group jos"
+            data-jos_once="1"
+            data-jos_animation="flip"
+            data-jos_counter="1"
+            data-jos_scrolldirection="down"
+            data-jos_delay="0"
+          >
+            <div
+              class="p-10 text-left rounded-[10px] text-black group-hover:text-white group-hover:bg-black transition-all duration-500"
+            >
+              <h3 class="font-inter text-[18px] leading-7 font-normal">
+                <span class="text-[28px] leading-9 font-dm font-bold">Pro</span
+                ><br />Up to 100 members
+              </h3>
+              <div class="w-full h-px bg-[#dbd6cf] my-5"></div>
+              <h4>
+                <span
+                  id="price-pro"
+                  class="font-dm text-[80px] leading-20 font-bold"
+                  >$1800</span
+                >
+                <span
+                  id="cycle-pro"
+                  class="font-semibold font-dm text-[18px] leading-7"
+                  >/Per year</span
+                >
+              </h4>
+              <p class="font-inter text-[18px] leading-7 font-normal mb-10">
+                This is an excellent option for people & small businesses who
+                are starting out.
+              </p>
+              <button
+                class="w-full h-10 p-8 border-2 border-black text-center rounded-[50px] cursor-pointer flex justify-center items-center group-hover:border-red-500 transition-all duration-500 relative overflow-hidden before:absolute before:inset-0 before:bg-[#fe330a] before:origin-top before:z-0 before:scale-y-0 before:transition-transform before:duration-300 hover:text-white hover:border-[#fe330a] hover:before:scale-y-100"
+              >
+                <span
+                  class="font-bold text-[16px] leading-6 font-inter relative z-10"
+                  >Choose the plan</span
+                >
+              </button>
+            </div>
+          </div>
+        </div>
       </section>
       <!-- Information -->
       <section class="bg-white py-30">
         <!-- Content -->
-        <div class="container mx-auto flex gap-15">
+        <div class="container mx-auto flex flex-col lg:flex-row gap-15">
           <!-- Left -->
           <div
             class="flex-3/5 jos"
@@ -889,7 +1031,8 @@
               <button
                 class="w-full flex justify-between items-center mb-5 accordion-header"
               >
-                <span class="text-[28px] font-dm font-bold leading-8.5"
+                <span
+                  class="text-[20px] leading-7 lg:text-[28px] font-dm font-bold lg:leading-8.5 text-left"
                   >How do I start AI SaaS?</span
                 >
                 <div>
@@ -908,7 +1051,8 @@
               <button
                 class="w-full flex justify-between items-center mb-5 accordion-header"
               >
-                <span class="text-[28px] font-dm font-bold leading-8.5"
+                <span
+                  class="text-[20px] leading-7 lg:text-[28px] font-dm font-bold lg:leading-8.5 text-left"
                   >Can I customize AI SaaS solutions?</span
                 >
                 <div>
@@ -927,7 +1071,8 @@
               <button
                 class="w-full flex justify-between items-center mb-5 accordion-header"
               >
-                <span class="text-[28px] font-dm font-bold leading-8.5"
+                <span
+                  class="text-[20px] leading-7 lg:text-[28px] font-dm font-bold lg:leading-8.5 text-left"
                   >How can AI benefit my business?</span
                 >
                 <div>
@@ -948,12 +1093,14 @@
       <!-- Feedback -->
       <section class="py-30 bg-black">
         <h1
-          class="font-dm text-[80px] leading-20 font-bold text-white mb-8 text-center"
+          class="font-dm text-[36px] leading-10 lg:text-[80px] lg:leading-20 font-bold text-white mb-8 text-center"
         >
           Positive feedback <br />
           from our users
         </h1>
-        <div class="container mx-auto grid grid-cols-3 gap-6">
+        <div
+          class="container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
+        >
           <div
             class="bg-transparent border border-gray-800 rounded-xl p-6 jos"
             data-jos_once="1"
@@ -1188,7 +1335,7 @@
             <div class="flex w-full items-center whitespace-nowrap gap-8">
               <img src="./img/footer-text-slider-icon.svg" alt="footer-icon" />
               <h1
-                class="font-dm text-[80px] leading-20 font-bold text-black text-center"
+                class="font-dm text-[36px] leading-9 lg:text-[80px] lg:leading-20 font-bold text-black text-center"
               >
                 Start building software
               </h1>
@@ -1196,7 +1343,7 @@
             <div class="flex w-full items-center whitespace-nowrap gap-8">
               <img src="./img/footer-text-slider-icon.svg" alt="footer-icon" />
               <h1
-                class="font-dm text-[80px] leading-20 font-bold text-black text-center"
+                class="font-dm text-[36px] leading-9 lg:text-[80px] lg:leading-20 font-bold text-black text-center"
               >
                 Start building software
               </h1>
@@ -1204,7 +1351,7 @@
             <div class="flex w-full items-center whitespace-nowrap gap-8">
               <img src="./img/footer-text-slider-icon.svg" alt="footer-icon" />
               <h1
-                class="font-dm text-[80px] leading-20 font-bold text-black text-center"
+                class="font-dm text-[36px] leading-9 lg:text-[80px] lg:leading-20 font-bold text-black text-center"
               >
                 Start building software
               </h1>
@@ -1214,7 +1361,7 @@
       </div>
       <div class="container mx-auto w-full h-px bg-[#dbd6cf]"></div>
       <!-- Footer mid -->
-      <div class="container mx-auto flex py-25 gap-20">
+      <div class="container mx-auto flex flex-col lg:flex-row py-25 gap-20">
         <div class="flex flex-2 flex-col gap-6">
           <a href="#"><img src="./img/logo.png" alt="logo" /></a>
           <p
@@ -1359,13 +1506,31 @@
           arrows: false,
           infinite: true,
           autoplay: true,
+          responsive: [
+            {
+              breakpoint: 1024,
+              settings: {
+                slidesToShow: 3,
+                slidesToScroll: 1,
+              },
+            },
+            {
+              breakpoint: 768,
+              settings: {
+                slidesToShow: 2,
+                slidesToScroll: 1,
+              },
+            },
+          ],
         });
       });
     </script>
     <!-- JOS -->
     <script src="https://unpkg.com/jos-animation/dist/jos.min.js"></script>
     <script>
-      JOS.init({});
+      JOS.init({
+        threshold: 0.5,
+      });
     </script>
     <!-- FS Lightbox -->
     <script src="https://cdn.jsdelivr.net/npm/fslightbox/index.js"></script>
