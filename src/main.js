@@ -1,38 +1,31 @@
 const btnMonthly = document.getElementById("btn-monthly")
 const btnAnnually = document.getElementById("btn-annually")
+const monthly = document.getElementById("monthly")
+const annually = document.getElementById("annually")
 
-const pricingData = {
-  monthly: { beginner: "25", starter: "89", pro: "199", label: "/Per month" },
-  annually: { beginner: "240", starter: "960", pro: "1800", label: "/Per year" }
-};
+function updateTime(type) {
 
-function updatePrices(type) {
-  // 1. Cập nhật con số giá tiền
-  document.getElementById('price-beginner').innerText = pricingData[type].beginner;
-  document.getElementById('price-starter').innerText = pricingData[type].starter;
-  document.getElementById('price-pro').innerText = pricingData[type].pro;
-
-  // 2. Cập nhật chữ Label
-  document.getElementById('cycle-beginner').innerText = pricingData[type].label;
-  document.getElementById('cycle-starter').innerText = pricingData[type].label;
-  document.getElementById('cycle-pro').innerText = pricingData[type].label;
-
-
-
-  // 3. Style Button active
   if (type === 'monthly') {
     btnMonthly.classList.add('active1');
     btnAnnually.classList.remove('active1');
+    monthly.classList.remove('hidden')
+    monthly.classList.add('grid')
+    annually.classList.add('hidden');
+    annually.classList.remove('grid');
+
   } else {
-    btnAnnually.classList.add('active1');
     btnMonthly.classList.remove('active1');
+    btnAnnually.classList.add('active1');
+    annually.classList.remove('hidden')
+    annually.classList.add('grid')
+    monthly.classList.add('hidden');
+    monthly.classList.remove('grid');
   }
 }
+btnMonthly.onclick = () => updateTime('monthly');
+btnAnnually.onclick = () => updateTime('annually');
 
-btnMonthly.onclick = () => updatePrices('monthly');
-btnAnnually.onclick = () => updatePrices('annually');
-
-// Acc
+// AccordionItems
 
 const accordionItems = document.querySelectorAll('.accordion-item');
 
